@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WHALE</title>
+        <!-- JQUERY 적용 -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="./index.css">
+        <!-- aos 적용
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+        <!-- index.js적용 -->
+        <script type="text/javascript" src="./index.js"></script>
+    </head>
+
+    <body>
+        <div id="background">
+                <video class="ocean" src="./lib/Ocean.mp4" muted loop autoplay></video>
+                <video class="dolphins"src="./lib/dolphins.mp4" muted loop autoplay></video> 
+                <video class="turtle" src="./lib/turtle.mp4" muted loop autoplay></video>
+                <video class="sealions" src="./lib/SeaLions.mp4" muted loop autoplay></video>
+        </div>
+    
+        <header>
+            <div id="header">
+                <a href="./index.html">Ocean</a>
+                <nav>
+                    <button type="button" id="open">=</button>
+                    <!-- 모달창 -->
+                    <div class="nav">
+                        <ul>
+                            <li><a href="#spring">Spring</a></li>
+                            <li><a href="#summer">Summer</a></li>
+                            <li><a href="#autumn">Autumn</a></li>
+                            <li><a href="#winter">Winter</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                        </ul>
+                        <button type="button" id="close">Close</button>
+                    </div>
+                </nav>
+            </div>
+        </header>    
+
+        <div id="main_box">
+            <div id="spring" data-aos="fade-right">
+                <div class="wrap">
+                    <video src="./lib/daisy.mp4" muted loop autoplay width="50%"></video>
+                    <span>
+                        <h2>Spring</h2>
+                        It's Daisy
+                    </span>
+                </div>
+                <p data-aos="fade-down">
+                    Spring is the first of the four seasons of the year,between winter and summer.<br>
+                    Meteorologically, it usually refers to March to May according to the solar calendar.<br>
+                    Spring is more important than any other season because it is not only<br>
+                    the beginning of the four seasons,but also the beginning of the year.<br><br>
+                    Among the four seasons, spring wind speed is the most diverse, and in particular,<br>
+                    the three hour wind speed is concentrated in the first month of spring, the first month of the lunar calendar.<br><br><br>
+                    In many cases of Korean literature, spring itself is symbolically expressed as a sense of vitality, brightness, or rebirth.<br>
+                    The first time to see swallows, heralding spring, is mid-April in the southern coast.<br><br>
+                    [Source: Encyclopedia of Korean National Culture (Spring)]
+                </p>
+            </div>
+
+            <div id="summer" data-aos="fade-right">
+                <div class="wrap">
+                    <span>
+                        <h2>Summer</h2>
+                        It's Dolphins
+                    </span>
+                    <video src="./lib/daisy.mp4" muted loop autoplay width="50%"></video>
+                </div>
+                <p data-aos="fade-in">
+                    Meteorologically, June, July, and August (April, May, and June of the lunar calendar)<br>
+                    is usually called summer, but astronomically it refers to the period from the summer<br>
+                    solstice (around June 22) to the autumn equinox (around September 23). <br>
+                    It refers to the period from (around May 6) to autumn (around August 8).<br><br><br>
+                    In the natural or meteorological/climatic seasons, <br>
+                    the average daily temperature is usually 20-25℃ and <br>
+                    the daily maximum temperature is 25℃ or higher in early summer and daily average temperature. <br>
+                    The monsoon season is 20-25℃, the daily maximum temperature is 25℃ or more,<br>
+                    the precipitation is concentrated, the midsummer is the daily average temperature is 25℃ <br>
+                    or more and the daily maximum temperature is 30℃ or more, <br>
+                    and the daily average temperature is 20-25℃ and the daily maximum temperature is 20-25℃.<br><br><br>
+                    It is subdivided into late summer with a temperature of 25°C or higher.<br>
+                    This period differs slightly depending on the region. <br>
+                    [Source: Encyclopedia of Korean National Culture (Summer)]
+                </p>
+            </div>
+
+            <div id="autumn">
+                <div class="wrap">
+                    <video src="./lib/daisy.mp4" muted loop autoplay width="50%"></video>
+                    <span>
+                        <h2>Autumn</h2>
+                        It's Turtle.
+                    </span>
+                </div>
+                <p data-aos="fade-out">
+                    Autumn is the third of the four seasons of the year, between summer and winter.<br>
+                    Meteorologically, September to November is usually referred to as autumn, <br>
+                    but autumn in Sesi Wind refers to the period from July to September of the lunar calendar.<br><br>
+                    As it is the season of harvest and the season of preparing for winter,<br>
+                    customs related to gratitude for the harvest and the origin of a good harvest<br>
+                    are concentrated in this period.<br><br>
+                    As the mountain stream is colored with autumn leaves,<br>
+                    autumn leaves play is also established as a national game.<br>
+                    Art works such as literature, music, and art based on autumn<br>
+                    are characterized by many works that empathize with the various forms of autumn,<br>
+                    such as loneliness, sorrow, and wretchedness.<br>
+                    [Source: Encyclopedia of Korean National Culture (Autumn)]
+                </p>
+            </div>
+
+
+            <div id="winter">
+                <div class="wrap">
+                    <video src="./lib/daisy.mp4" muted loop autoplay width="50%"></video>
+                    <span>
+                        <h2>Winter</h2>
+                        It's sealions
+                    </span>
+                </div>
+                <p data-aos="fade-up">
+                    Meteorologically, it usually refers to the period <br>
+                    from December to February, but based on changes in various climatic factors<br>
+                    such as temperature and precipitation, the start and end of winter and the length of winter<br>
+                    appear variously depending on the place and year. <br><br>
+                    The beginning of winter is Ipdong (November 8) and the end is Ipchun (立春, February 4),<br>
+                    when spring begins.<br>
+                    Natural seasons include early winter<br>
+                    (average daily temperature below 5°C and daily minimum temperature below 0°C), <br>
+                    late winter(average daily temperature below 0°C and daily average temperature <br>
+                    below 0°C and minimum daily temperature below -5°C) and late winter <br>
+                    (average daily temperature below -5°C).
+                    It is 5℃ or less and the daily minimum temperature is 0℃ or less).<br><br>
+                    Winter starts early in the northern regions and ends later in northern regions.<br>
+                    Early winter begins on November 27 in Seoul and November 28 in Daegu. <br>
+                    And in Jeju, the daily minimum temperature does not drop below freezing even in early winter.<br>
+                    [Source: Encyclopedia of Korean National Culture (Winter)]
+                </p>
+            </div>
+
+            <div id="gallery">
+                <span>Gallery</span>
+                <div>
+                    <img src="./lib/whale.jpg" alt="whale" width="30%">
+                </div>
+            </div>
+            <div id="footer">
+                About us
+            </div>
+
+        </div>
+        <!-- <script>
+            AOS.init(
+                duration=1000);
+        </script> -->
+    </body>
+</html>
