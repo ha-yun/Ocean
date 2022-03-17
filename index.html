@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>WHALE</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
         <!-- JQUERY 적용 -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- aos 적용 -->
@@ -16,8 +17,8 @@
         <div id="background">
                 <video class="ocean" src="./lib/Ocean.mp4" muted loop autoplay></video>
                 <video class="dolphins"src="./lib/dolphins.mp4" muted loop autoplay></video> 
-                <video class="turtle" src="./lib/turtle.mp4" muted loop autoplay></video>
-                <video class="sealions" src="./lib/SeaLions.mp4" muted loop autoplay></video>
+                <video class="penguin" src="./lib/penguin.mp4" muted loop autoplay></video>
+                <video class="ice" src="./lib/Iceland.mp4" muted loop autoplay></video>
         </div>
     
         <header>
@@ -27,6 +28,8 @@
                     <button type="button" id="open">=</button>
                     <!-- 모달창 -->
                     <div class="nav">
+                        <h1>Ocean</h1>
+                        <hr>
                         <ul>
                             <li><a href="#spring">Spring</a></li>
                             <li><a href="#summer">Summer</a></li>
@@ -45,10 +48,9 @@
                 scroll down
             </div>
 
-
             <div id="spring" data-aos="fade-right">
                 <div class="wrap">
-                    <video src="./lib/daisy.mp4" muted loop autoplay width="50%"></video>
+                    <video src="./lib/daisy.mp4" muted loop autoplay></video>
                     <span>
                         <h2>Spring</h2>
                         It's Daisy
@@ -73,7 +75,7 @@
                         <h2>Summer</h2>
                         It's Dolphins
                     </span>
-                    <video src="./lib/daisy.mp4" muted loop autoplay width="50%"></video>
+                    <video src="./lib/dolphin.mp4" muted loop autoplay></video>
                 </div>
                 <p data-aos="fade-in">
                     Meteorologically, June, July, and August (April, May, and June of the lunar calendar)<br>
@@ -93,12 +95,12 @@
                 </p>
             </div>
 
-            <div id="autumn">
+            <div id="autumn" data-aos="fade-right">
                 <div class="wrap">
-                    <video src="./lib/daisy.mp4" muted loop autoplay width="50%"></video>
+                    <video src="./lib/seal.mp4" muted loop autoplay></video>
                     <span>
                         <h2>Autumn</h2>
-                        It's Turtle.
+                        It's Seal.
                     </span>
                 </div>
                 <p data-aos="fade-out">
@@ -118,13 +120,13 @@
             </div>
 
 
-            <div id="winter">
+            <div id="winter" data-aos="fade-right">
                 <div class="wrap">
                     <span>
                         <h2>Winter</h2>
                         It's sealions
                     </span>
-                    <video src="./lib/daisy.mp4" muted loop autoplay width="50%"></video>
+                    <video src="./lib/SeaLions.mp4" muted loop autoplay></video>
                 </div>
                 <p data-aos="fade-up">
                     Meteorologically, it usually refers to the period <br>
@@ -147,18 +149,41 @@
             </div>
             <div id="gallery">
                 <span>Gallery</span>
-                <div>
-                    <img src="./lib/whale.jpg" alt="whale" width="30%">
+                <div class="img_box">
+                    <img src="./lib/whale.jpg" alt="whale" data-aos="fade-right">
+                    <img src="./lib/seabird.jpg" alt="seabird" data-aos="fade-left">
+                    <img src="./lib/surf.jpg" alt="surf" data-aos="fade-right">
+                    <img src="./lib/seashells.jpg" alt="seashells" data-aos="fade-left">
+                    <img src="./lib/dolphin.jpg" alt="dolphin" data-aos="fade-right">
+                    <img src="./lib/fish.jpg" alt="fish" data-aos="fade-left">
                 </div>
             </div>
             <div id="footer">
-                About us
+                <span><strong>About us</strong><br>
+                    The ocean refers to one huge mass of<br>
+                    salt water that fills the lowlands on Earth.<br>
+                    The surface of stagnant seawater, that is,<br> 
+                    the surface of the surface that is higher<br>
+                    than sea level, is called land or land.<br>
+                    The oceans cover most of the Earth's surface,<br>
+                    forming one large area.
+                </span>
+                <span><strong>Contact</strong><br>
+                    instagram @penguin<br>
+                    twitter @ocean<br>
+                    email @dolphin<br>
+                    tel 2022-03-17<br>
+                    <a href="#header">@ocean</a>
+                </span>
+                
             </div>
 
         </div>
         <script>
-            AOS.init(
-                duration=1000);
+            AOS.init({
+                easing:'ease-in',
+                duration: 300
+            });
         </script>
     </body>
 </html>
