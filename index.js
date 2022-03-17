@@ -39,9 +39,9 @@ $(function(){
         var WinterOffset = $("#winter").children('p').offset().top;
 
         if(SpringOffset < SCROLL && SCROLL < SummerOffset){
-            $BackgroundOcean.slideUp(0);
-            $BackgroundDolphins.slideDown(0);
-            $BackgroundPenguin.slideUp(0);
+            $BackgroundOcean.slideUp(10);
+            $BackgroundDolphins.slideDown(10);
+            $BackgroundPenguin.slideUp(10);
             $BackgroundIce.slideUp(0);
         }
         else if(SummerOffset <= SCROLL && SCROLL < AutumnOffset){

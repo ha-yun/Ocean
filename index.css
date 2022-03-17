@@ -29,7 +29,7 @@ html,body,article,header,div,video,footer{
     z-index: 0;
 }
 #background video{
-    width: 100vw;
+    min-width: 100vw;
     min-height: 100vh;
 }
 
