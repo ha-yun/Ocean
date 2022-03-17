@@ -4,11 +4,11 @@
         <title>WHALE</title>
         <!-- JQUERY 적용 -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <link rel="stylesheet" href="./index.css">
-        <!-- aos 적용
+        <!-- aos 적용 -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <!-- index.js적용 -->
+        <link rel="stylesheet" href="./index.css">
         <script type="text/javascript" src="./index.js"></script>
     </head>
 
@@ -41,6 +41,11 @@
         </header>    
 
         <div id="main_box">
+            <div id="down">
+                scroll down
+            </div>
+
+
             <div id="spring" data-aos="fade-right">
                 <div class="wrap">
                     <video src="./lib/daisy.mp4" muted loop autoplay width="50%"></video>
@@ -115,11 +120,11 @@
 
             <div id="winter">
                 <div class="wrap">
-                    <video src="./lib/daisy.mp4" muted loop autoplay width="50%"></video>
                     <span>
                         <h2>Winter</h2>
                         It's sealions
                     </span>
+                    <video src="./lib/daisy.mp4" muted loop autoplay width="50%"></video>
                 </div>
                 <p data-aos="fade-up">
                     Meteorologically, it usually refers to the period <br>
@@ -140,7 +145,6 @@
                     [Source: Encyclopedia of Korean National Culture (Winter)]
                 </p>
             </div>
-
             <div id="gallery">
                 <span>Gallery</span>
                 <div>
@@ -152,9 +156,9 @@
             </div>
 
         </div>
-        <!-- <script>
+        <script>
             AOS.init(
                 duration=1000);
-        </script> -->
+        </script>
     </body>
 </html>

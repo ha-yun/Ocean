@@ -4,7 +4,6 @@
     font-family: 'Playfair Display', serif;
 }
 body{
-    scroll-behavior: smooth;
     width: 100%;
 }
 html,body,article,header,div,video,footer{
@@ -109,15 +108,21 @@ header{
 
 #main_box{
     position: absolute;
-    top: 100%;
+    top: 90%;
     width: 100%;
     color: ghostwhite;
+}
+#down{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30%;
+    font-size: 1.5rem;
+    color: black;
 }
     .wrap{
         display: flex;
         align-items: center;
-        background: rgba(47, 79, 79, 0.5);
-        width: 100%;
+        width: 80%;
         }
     .wrap span{
         padding: 5%;
@@ -134,30 +139,33 @@ header{
         font-family: 'EB Garamond', serif;
     }
 
-    #spring{
+    #spring, #autumn{
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: left;
-        
     }
-    #summer{
+    #summer, #winter{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    #summer .wrap{
+    #summer .wrap, #winter .wrap{
         justify-content: flex-end;
+    }
+    #winter p{
+        margin-bottom: 20%;
     }
 
 
+
 #gallery{
-    background: rgba(47, 79, 79, 0.5);
     width: 100%;
     padding: 3%;
 }
     #gallery span{
         font-size: 2rem;
+        color: black;
     }
 
 #footer{
