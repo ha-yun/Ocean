@@ -39,9 +39,9 @@ $(function(){
         var WinterOffset = $("#winter").children('p').offset().top;
 
         if(SpringOffset < SCROLL && SCROLL < SummerOffset){
-            $BackgroundOcean.slideUp(10);
-            $BackgroundDolphins.slideDown(10);
-            $BackgroundPenguin.slideUp(10);
+            $BackgroundOcean.slideUp(0);
+            $BackgroundDolphins.slideDown(0);
+            $BackgroundPenguin.slideUp(0);
             $BackgroundIce.slideUp(0);
         }
         else if(SummerOffset <= SCROLL && SCROLL < AutumnOffset){
@@ -62,6 +62,7 @@ $(function(){
             $BackgroundIce.slideUp(0);
         }
     }
+    
 
     // nav 모달창
     function OpenModal(){
@@ -77,4 +78,5 @@ $(function(){
         OpenNav.on('click',OpenModal);
         CloseNav.on('click',CloseModal);
     }
+
 })
