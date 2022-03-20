@@ -30,7 +30,7 @@ $(function(){
         CloseNav = NavText.children('#close');
     }
 
-    //반응형 parallax background 
+    //parallax background 
     function ScrollTitle(){
         var SCROLL = $(window).scrollTop();
         var SpringOffset = $("#spring").children('p').offset().top;
